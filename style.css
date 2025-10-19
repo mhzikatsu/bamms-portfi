@@ -1,0 +1,152 @@
+*{ padding: 0;
+margin: 0;
+box-sizing: border-box;
+
+}
+
+:root{ 
+    --text-color: rgb(255, 255, 255);
+    --bg--url: url(./assets/night.gif);
+    --stroke-color : rgb(255, 255, 255);
+    --surface-color: rgba(0, 0, 0, 0.5);
+    --surface-color: rgba(0, 0, 0, 0.5);
+    --hightlight-color: rgb(0, 0, 0, 0.5);
+}
+
+.light {
+    --text-color: rgb(0, 0, 0);
+    --br-url: url(./assets/gifsaku.gif);
+    --stroke-color : rgb(0, 0, 0) 0.5;
+    --surface-color: rgba(0, 0, 0, 0.5);
+    --surface-color-hover: rgba(0, 0, 0, 0.5);
+    --hightlight-color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+body{
+    background-image: url(./assets/gifsaku.gif);
+   --var--bg--url: url(./assets/night.gif);
+}
+
+body{
+
+ background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+ /*valor de repeticao do fundo=,valor de posicionamento/valor de cobrir=cover!*/
+color-var(--text-color);
+}
+
+body * {
+    font-family:  "inter", Helvetica, sans-Pixelizar;
+   
+    font-size: 20px;
+}
+#box-1{ 
+    width: 360px;
+    margin: 56px auto 0px auto;
+     
+
+
+}
+
+#box-2 {
+    img { border-radius: 50%; border: 2px solid rgb(0, 0, 0);} 
+    text-align: center;
+    padding: 24px; 
+}
+
+#box-2 img{
+
+    width: 112px;
+
+}
+
+#box-1 p{
+    font-weight: 500; font-weight: 24px; 
+    line-height: 24px;
+    margin-top: 24px;
+
+
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    margin-top: 24px;
+
+
+
+}
+
+ul li a{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 16px; 24px;
+   
+    background-color: rgb(surface-color);
+    border: 1px solid rgb(--stroke-color);
+    border-radius: 8px;
+
+    -webkit-backdrop-filter: blur(04px);
+    backdrop-filter: blur(04px);
+   
+    text-decoration: none;
+    font-weight: 500;
+
+    transition: background  0.3s;
+
+
+}
+
+
+ul li a:hover {
+    background: var(--surface-color, 0.5);
+    border: 1.5px solid rgb(255, 255, 255);
+    color: var(--text-color)
+
+}
+
+#social-links{
+    display: flex;
+    justify-content: center;
+    
+
+    padding: 24px;
+    
+    font-size: 24px;
+
+}
+
+
+#social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    
+    transition: background 0.2s;
+    border-radius: 50%;
+}
+
+#social-links a:hover{
+    border: 2px solid rgb(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: var(--text-color);
+    background: var(--hightlight-color);
+}
+
+footer{
+    padding: 24px;
+
+    text-align: center;
+   font-size: 14px;
+
+}
